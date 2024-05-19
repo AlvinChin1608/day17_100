@@ -90,7 +90,9 @@ The __init__ method is a special method called a constructor. It is automaticall
 **The self Keyword**
 The self keyword represents the instance of the class. It is used to access variables and methods associated with the current object.
 
-##Class Attributes vs. Instance Attributes
+**Class Attributes vs. Instance Attributes**
+
+
 **Class Attributes:** Shared across all instances of a class.
 
 **Instance Attributes:** Unique to each instance.
