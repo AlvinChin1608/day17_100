@@ -35,27 +35,27 @@ class MyClass:
     # Method
     def my_method(self):
         print(f"Attribute1: {self.attribute1}, Attribute2: {self.attribute2}")
-
+```
 
 
 **Creating an Object**
 You create an object by calling the class as if it were a function.
 
-
+```python
 my_object = MyClass("Value1", "Value2")
-
+```
 
 **Accessing Attributes and Methods**
 You can access attributes and methods using the dot (.) notation.
 
-
+```python
 print(my_object.attribute1)  # Output: Value1
 my_object.my_method()        # Output: Attribute1: Value1, Attribute2: Value2
-
+```
 
 **Example**
 
-
+```python
 class Dog:
     # Class attribute
     species = "Canis familiaris"
@@ -82,6 +82,7 @@ print(dog1.name)               # Output: Buddy
 print(dog2.age)                # Output: 3
 print(dog1.bark())             # Output: Buddy says woof!
 print(dog2.get_age_in_dog_years())  # Output: 21
+```
 
 **The __init__ Method**
 The __init__ method is a special method called a constructor. It is automatically called when an object is created from a class and allows the class to initialize the object's attributes.
@@ -93,6 +94,7 @@ The self keyword represents the instance of the class. It is used to access vari
 **Class Attributes:** Shared across all instances of a class.
 
 **Instance Attributes:** Unique to each instance.
+```python
 class Car:
     # Class attribute
     wheels = 4
@@ -110,5 +112,7 @@ print(car1.wheels)  # Output: 4
 print(car2.wheels)  # Output: 4
 print(car1.color)   # Output: Red
 print(car2.color)   # Output: Blue
+```
+
 
 
