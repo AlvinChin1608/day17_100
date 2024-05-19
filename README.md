@@ -5,19 +5,24 @@ Additionally, I have chosen to include the beginner stage and later on intermedi
 
 -------------------------------------------------------
 
-**What is a Class?**
-A class in Python is a blueprint for creating objects. Objects represent real-world entities and have attributes (data) and methods (functions) that define their behavior. Classes allow you to bundle data and functionality together.
+# Introduction to Python Classes
 
-**Basic Terminology**
-Class: A blueprint for creating objects.
-Object: An instance of a class.
-Attribute: A variable that belongs to an object or class.
-Method: A function that belongs to an object or class.
+## What is a Class?
 
-**Defining a Class**
-You define a class using the class keyword followed by the class name and a colon. The class name should follow the PascalCase naming convention.
+A **class** in Python is a blueprint for creating objects. Objects represent real-world entities and have attributes (data) and methods (functions) that define their behavior. Classes allow you to bundle data and functionality together.
 
+## Basic Terminology
 
+- **Class**: A blueprint for creating objects.
+- **Object**: An instance of a class.
+- **Attribute**: A variable that belongs to an object or class.
+- **Method**: A function that belongs to an object or class.
+
+## Defining a Class
+
+You define a class using the `class` keyword followed by the class name and a colon. The class name should follow the PascalCase naming convention.
+
+```python
 class MyClass:
     # Class attribute
     class_attribute = "I am a class attribute"
@@ -30,6 +35,7 @@ class MyClass:
     # Method
     def my_method(self):
         print(f"Attribute1: {self.attribute1}, Attribute2: {self.attribute2}")
+
 
 
 **Creating an Object**
@@ -76,5 +82,33 @@ print(dog1.name)               # Output: Buddy
 print(dog2.age)                # Output: 3
 print(dog1.bark())             # Output: Buddy says woof!
 print(dog2.get_age_in_dog_years())  # Output: 21
+
+**The __init__ Method**
+The __init__ method is a special method called a constructor. It is automatically called when an object is created from a class and allows the class to initialize the object's attributes.
+
+**The self Keyword**
+The self keyword represents the instance of the class. It is used to access variables and methods associated with the current object.
+
+##Class Attributes vs. Instance Attributes
+**Class Attributes:** Shared across all instances of a class.
+
+**Instance Attributes:** Unique to each instance.
+class Car:
+    # Class attribute
+    wheels = 4
+    
+    def __init__(self, color, model):
+        # Instance attributes
+        self.color = color
+        self.model = model
+
+# Create instances
+car1 = Car("Red", "Toyota")
+car2 = Car("Blue", "Honda")
+
+print(car1.wheels)  # Output: 4
+print(car2.wheels)  # Output: 4
+print(car1.color)   # Output: Red
+print(car2.color)   # Output: Blue
 
 
